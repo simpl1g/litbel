@@ -1,0 +1,28 @@
+{
+  "background": {
+    "scripts": ["contentscript.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["checker.js"]
+  }],
+  "browser_action": {
+    "default_title": "Lithuanian Ambassy",
+    "default_icon": "download48.png"
+  },
+  "description": "Scans for free dates for lithuanian ambassy",
+  "icons": {
+    "48": "download48.png"
+  },
+  "manifest_version": 2,
+  "name": "Lit",
+  "permissions": [
+    "notifications"
+    // ,
+    // "https://evas2.urm.lt/visit/*",
+    // "http://evas2.urm.lt/visit/*"
+  ],
+  "version": "1.0",
+  "web_accessible_resources": [ "download2.png" ]
+}
